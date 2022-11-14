@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BmiActivity">
+
+    <Button
+        android:id="@+id/btn_bmi_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="BACK"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linear_1"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linear_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_height"
+                android:layout_width="4dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="身高cm："
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/input_height"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:inputType="number"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_2"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linear_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_weight"
+                android:layout_width="4dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="體重kg："
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/input_weight"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:inputType="number"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_3"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_count"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:text="計算"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="236dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="30dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/text_show"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
